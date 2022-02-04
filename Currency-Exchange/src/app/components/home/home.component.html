@@ -1,0 +1,24 @@
+<div class="row">
+    <h2>Currency Exchange App</h2>
+</div>
+
+<div class="row mt-5 g-3">
+    <div class="col-md-3 pr-5">
+        <input type="number" [(ngModel)]="inputValue" class="form-control" aria-label="Text input with checkbox">
+    </div>
+    <div class="col-md-3">
+        <select class="form-select" [(ngModel)]="inCurr" aria-label="Default select example">
+            <option *ngFor="let curr of currencies">{{curr}}</option>
+        </select>
+    </div>
+</div>
+
+<div class="row mt-3 g-3">
+    <div class="col-md-3 pr-5">
+        <input type="text" class="form-control" [ngModel]="output()" aria-label="Text input with checkbox">
+    </div>
+    <div class="col-md-3">
+        <select class="form-select" [(ngModel)]="outCurr" aria-label="Default select example">
+            <option *ngFor="let curr of currencies">{{curr}}</option>
+        </select>
+    </div>
